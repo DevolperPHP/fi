@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title><%= title %></title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://allfont.net/allfont.css?fonts=exo-bold" rel="stylesheet" type="text/css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+        <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+        
+    </head>
+
+    <body>
+        <div class="ajaxbg">
+            <div class="ajaxinner">
+                <img src="/images/ajax-loader.gif" alt=""/>
+            </div>
+        </div>
+        <nav class="navbar navbar-inverse myNav">
+            <div class="container ">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    
+                    <img src="/images/logo.png" class="logo"/> <p class="brand" href="/">FIE<span>EBS</span></p>
+                   <button onclick="window.location.href='/'" class="home">الصفحة الرئيسية <ion-icon name="home"></ion-icon></button>
+                <button onclick="window.location.href='/cart/checkout'" class="shopping">سلة التسوق<ion-icon name="cart" class="icon"></ion-icon></button>
+                    <div class="input-icons search"> 
+                      <i  class="fa fa-search"></i> 
+                      <input class="input-field" type="text" disabled="disabled"> 
+                     </div> 
+                    
+                    
+                </div>
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <% pages.forEach(function(page){ %>
+                        <% if (page.slug == "home") { %>
+                        <li><a href="/"><%= page.title %></a></li>
+                        <% } else {%>
+                        <li><a href="/<%= page.slug %>"><%= page.title %></a></li>
+                        <% } %>
+                        <% }); %>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <% if (user) { %>
+                        <li><button class="logout" onclick="window.location.href='/users/logout'"><%= user.username %> ( تسجيل خروج )</button></li>
+                        <% } else {%>
+                        <li><button class="reg" onclick="window.location.href='/users/register'"><span>انشاء حساب <ion-icon name="person-add"></ion-icon><span></button></li>
+                        <li><button class="login" onclick="window.location.href='/users/login'">تسجيل الدخول <ion-icon name="person-circle"></ion-icon></button></li>
+                        <% } %>
+                        <% if (user && user.admin == 1) { %>
+                        <li><button onclick="window.location.href='/admin/categories'" class="admin">مركز التجكم</button></li>
+                        <% }%>
+                        
+                    </ul>
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+
+        <div class="container">
+            <%- messages('messages', locals) %>
+            
+            <% if (errors) {%>
+                <% errors.forEach(function(error) { %>
+                <div class="alert alert-danger">
+                    <%= error.msg %>
+                </div>
+                <% });%>
+            <% }%>
+   
+<nav class="mo">
+<div class="container">
+     <ul>
+        <li class="pclass"><button class="astyle" onclick="window.location.href='/products'">
+        <ion-icon name="layers" style="font-size: 15px;"></ion-icon> احدث المنتجات</button></li>
+        <% categories.forEach(function(c){ %>
+            <li class="pclass"><button class="astyle" onclick="window.location.href='/products/<%= c.slug %>'"><%= c.title %></button></li>
+        <% }); %>
+     </ul>
+  </div>
+  </nav>

@@ -1,0 +1,41 @@
+<% include _layouts/header %>
+
+<div class="row">
+        <script>
+          function goBack() {
+            window.history.back();
+          }
+        </script>
+    <button class="btn back" onclick="goBack()">السابق <ion-icon name="arrow-forward-outline"></ion-icon></button>
+    <h1 class="page-header porduct-title"><%= p.title %></h1>
+    
+    <div class="col-xs-12 col-md-5">
+        <img class="spi" src="/product_images/<%= p.id %>/<%= p.image %>" alt="">
+        <br>
+    </div>
+    <div class="col-xs-12 col-md-7" style="text-align: center;">
+        <p class="dec"><%= p.desc %></p>
+        <p class="price"><%= parseFloat(p.price).toFixed(0) %> <span class="iqd">IQD<span></p>
+        <p class="every">يوجد لدينا توصيل في جميع انحاء العراق و الدفع عند الاستلام</p>
+        <% if (loggedIn) { %>
+        <p><button onclick="window.location.href='/cart/add/<%= p.slug %>'" class="addto">اضافة الى عربة التسوق<ion-icon name="cart" style="font-size: 15px;"></ion-icon></button></p> 
+        <% } else {%>
+        <p>يجب عليك انشاء حساب او تسجيل الدخول للقيام بعملية الشراء</p>
+        <% } %>
+    </div>
+    <div class="col-xs-12">
+        <ul class="gallery">
+            <% galleryImages.forEach(function(image){ %>
+            <% if (image != "thumbs") { %>
+            <li>
+                <a data-fancybox="gallery" href="/product_images/<%= p.id %>/gallery/<%= image %>">
+                    <img src="/product_images/<%= p.id %>/gallery/thumbs/<%= image %>" alt="">
+                </a>
+            </li>
+            <% } %>
+            <% }); %>
+        </ul>
+    </div>
+</div>
+
+<% include _layouts/footer %>
