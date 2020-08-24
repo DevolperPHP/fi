@@ -1,0 +1,568 @@
+@font-face{
+    font-family: 'arabic';
+    src: url("../fonts/arabic.ttf");
+}
+
+@import url(https://allfont.net/allfont.css?fonts=exo-bold);
+
+img.pimage {
+    width: 150px;
+}
+
+button{
+    border: none;
+}
+
+.navbar-inverse{
+    background: rgb(2,54,73); background: linear-gradient(131deg, rgba(2,54,73) 74%, rgba(17,214,221) 54%);
+    padding-bottom: 30px;
+}
+.brand{
+    font-size: x-large;
+    margin-bottom: -30px;
+    margin-left: 40px;
+    color: rgba(17,214,221);
+    font-family: 'Exo Bold', arial;
+}
+
+.index{
+    text-align: center;
+    font-size: large;
+    font-family: 'arabic';
+}
+
+.brand span{
+    color: white;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+    margin-bottom: -60px; 
+    margin-top: -15px;
+    margin-left: -20px;
+}
+
+.shopping{
+    margin-left: -300px;
+    color: white;
+    transition: all 0.3ms ease 0s;
+    font-size: medium;
+    font-family: 'arabic';
+    background-color: rgba(2,54,73);
+    border: none;
+   
+}
+
+
+.shopping:hover{
+    color: rgba(17,214,221);
+}
+
+.icon{
+    font-size: large;
+}
+
+ul li{
+    display: inline;
+}
+
+.home{
+    margin-left: 300px;
+    color: white;
+    transition: all 0.3ms ease 0s;
+    font-size: medium;
+    font-family: 'arabic';
+    background-color: rgba(2,54,73);
+    border: none;
+}
+
+.home:hover{
+    color: rgba(17,214,221);
+}
+
+.input-icons i { 
+    position: absolute; 
+    margin-top: 4px;
+    margin-left: 155px;
+    color: rgba(17, 214, 221);
+} 
+  
+.input-icons { 
+    width: 200px; 
+} 
+  
+.icon { 
+    min-width: 40px; 
+} 
+
+.input-field{
+    background-color: rgb(7,111,125);
+    border: none;
+    border-radius: 15px;
+}
+
+.search{
+    margin-left: 600px;
+    margin-top: -22px;
+    color: white;
+}
+
+.reg{
+    margin-right: 15px;
+    font-family: 'arabic';
+    margin-top: 30px;
+    color: rgba(17,214,221);
+    background-color: rgba(2,54,73);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 1000ms ease 0s;
+}
+
+.reg:hover{
+    background-color: rgba(17,214,221);
+    color: rgba(2,54,73);
+}
+
+.login{
+    margin-right: -45px;
+    font-family: 'arabic';
+    margin-top: 30px;
+    color: rgba(17,214,221);
+    background-color: rgba(2,54,73);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 1000ms ease 0s;
+}
+
+.login:hover{
+    background-color: rgba(17,214,221);
+    color: rgba(2,54,73); 
+}
+
+.logout{
+    margin-right: 5px;
+    font-family: 'arabic';
+    margin-top: 30px;
+    color: rgba(17,214,221);
+    background-color: rgba(2,54,73);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 1000ms ease 0s;
+}
+
+.logout:hover{
+    background-color: rgba(17,214,221);
+    color: rgba(2,54,73); 
+}
+
+.admin{
+    margin-right: -25px;
+    font-family: 'arabic';
+    margin-top: 30px;
+    color: rgba(17,214,221);
+    background-color: rgba(2,54,73);
+    border-radius: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 1000ms ease 0s;
+}
+
+.admin:hover{
+    background-color: rgba(17,214,221);
+    color: rgba(2,54,73); 
+}
+
+.mo{
+    background-color: rgb(238,238,238);
+    padding-bottom: 20px;
+    direction: rtl;
+    margin-top: -19px;
+    margin-left: -110px;
+    display: inline;
+}
+
+
+
+.mo button{
+    color: black;
+    font-family: 'arabic';
+    margin-top: 15px;
+    border: black;
+    margin-right: 20px;
+    margin-left: 20px;
+    transition: all 1000ms ease 0s;
+    border-radius: 8px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-align: center;
+}
+
+.mo button:hover{
+    background-color:  rgba(2,54,73);
+    color: rgba(17,214,221);
+}
+
+.pro{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pro-border{
+    border: rgb(239, 239, 239);
+    border-style: groove;
+    border-width: 0.01px;
+    
+}
+
+.pro a{
+    font-family: 'arabic';
+    font-family: 'Exo Bold', arial;
+}
+
+.pro h4{
+    font-family: 'arabic';
+    font-family: 'Exo Bold', arial;
+}
+
+.more{
+    font-family: 'arabic';
+    color: rgba(17,214,221);
+    background-color: rgba(2,54,73);
+    border-radius: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: all 1000ms ease 0s;
+}
+
+.more:hover{
+    background-color: rgba(17,214,221);
+    color: rgba(2,54,73);
+}
+
+.addto{
+    font-family: 'arabic';
+    color: rgba(2,54,73);
+    background-color: rgba(17,214,221);
+    border-radius: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    transition: all 1000ms ease 0s;
+}
+
+.every{
+    font-family: 'arabic';
+    font-size: 20px;
+}
+
+.addto:hover{
+    background-color: lawngreen;
+    color: black;
+}
+
+.footer1{
+    font-family: 'Exo Bold', arial;
+    color: rgba(17,214,221);
+    font-size: xx-large;
+}
+
+.footer2{
+    font-family: 'Exo Bold', arial;
+    color: rgba(2,54,73);
+    font-size: xx-large;
+}
+
+.logo-title{
+    font-family: 'Exo Bold', arial;
+    font-size: 70px;
+    text-align: center;
+    color: rgba(17,214,221);
+}
+
+.logo-title span{
+    color: rgba(2,54,73);
+}
+
+.logo-p{
+    font-size: medium;
+    font-family: 'arabic';
+    text-align: center;
+}
+
+.reg-name{
+    margin-top: 38px;
+    margin-left: -300px;
+    padding-right: 480px;
+    direction: ltr;
+}
+
+.form-control{
+    border-radius: 15px;
+}
+
+.create{
+    border-radius: 15px;
+    color: rgba(17,214,221);
+    background-color: rgba(2,54,73);
+    transition: all 1000ms ease 0s;
+}
+
+.create:hover{
+    background-color: rgba(17,214,221);
+    color: rgba(2,54,73); 
+}
+
+.back{
+    background-color: rgba(2,54,73);
+    color: white;
+    font-family: 'arabic';
+    font-size: large;
+    margin-left: 1100px;
+    margin-top: 10px;
+    transition: none;
+    border-radius: 15px;
+}
+
+.back:hover{
+    color: white;
+}
+
+.porduct-title{
+    font-family: 'Exo Bold', arial;
+    text-align: right;
+    margin-right: 285px;
+}
+
+.dec{
+    font-family: 'arabic';
+    font-size: medium;
+}
+
+.price{
+    font-family: 'Exo Bold', arial;
+    color: rgba(17,214,221);
+    font-size: x-large;
+}
+
+.iqd{
+    font-size: small;
+    color:black;
+}
+
+.delete{
+    background-color: rgba(17,214,221);
+    color: white;
+    transition: all 1000ms ease 0s;
+    border: none;
+    border-radius: 12px;
+    padding-right: 4px;
+    padding-left: 4px;
+}
+
+.delete:hover{
+    background-color: red;
+    color: white;
+}
+
+
+.abr{
+    font-family: 'arabic';
+}
+
+@media only screen and (max-width: 780px){
+    
+    .shopping{
+        font-size: small;
+        margin-left: 25px;
+    }
+
+    .home{
+        font-size: medium;
+        margin-left: 140px;
+        
+
+    }
+
+    .logo{
+        height: 20;
+        width: 20;
+    }
+    .brand{
+        font-size: x-large;
+    }
+    .navbar-inverse{
+        background: rgb(2,54,73); background: linear-gradient(121deg, rgba(2,54,73) 84%, rgba(17,214,221) 34%);
+        padding-bottom: -50px;
+    }
+
+    .input-icons{
+        margin-left: 135px;
+        margin-top: -25px;
+    }
+
+    .mo{
+        max-width: 20px;
+    }
+
+    .pclass button{
+        display: inline;
+        text-align: center;
+    }
+
+    .mo button{
+        display: inline-block;
+        margin-left: -20px;
+        text-align: center;
+    }
+
+    .catore{
+        margin-right: 10px;
+    }
+
+    .form-control{
+        padding-right: -40px;
+    }
+
+    .aa1{
+        margin-top: -20px;
+    }
+
+    .aa2{
+        width: 430px;
+    }
+    .back{
+        margin-left: 280px;
+    }
+}
+
+@media only screen and (width: 768px){
+
+    .myNav{
+        padding-right: 150px;
+    }
+    
+
+    .shopping{
+        font-size: medium;
+        margin-left: 25px;
+    }
+
+    .home{
+        font-size: medium;
+        margin-left: 140px;
+        
+
+    }
+
+    .reg{
+        margin-right: 10px;
+    }
+
+    .login{
+        margin-right: -20px;
+    }
+
+    .logo{
+        height: 20;
+        width: 20;
+    }
+    .brand{
+        font-size: x-large;
+    }
+    .navbar-inverse{
+        background: rgb(2,54,73); background: linear-gradient(121deg, rgba(2,54,73) 64%, rgba(17,214,221) 50%);
+        padding-bottom: -50px;
+    }
+
+    .input-icons{
+        margin-left: 225px;
+        margin-top: 5px;
+    }
+
+    .mo{
+        max-width: 20px;
+    }
+
+    .pclass button{
+        display: inline;
+        text-align: center;
+    }
+
+    .mo button{
+        display: inline-block;
+        margin-left: -20px;
+        text-align: center;
+    }
+
+    .catore{
+        margin-right: 10px;
+    }
+
+    .form-control{
+        padding-right: -40px;
+    }
+    .back{
+        margin-left: 280px;
+    }
+}
+
+a.pa {
+    display: inline-block;
+    height: 160px;
+}
+
+.row.products .p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img.spi {
+    width: 100%;
+}
+
+ul.gallery li {
+    display: inline-block;
+    margin: 20px;
+    list-style: none;
+}
+
+img.cpi {
+    width: 100px;
+}
+
+table.alignmiddle td {
+    vertical-align: middle !important;
+}
+
+.pp {
+    position: absolute;
+    left: -3000px;
+}
+
+.ajaxbg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(255,255,255, .8);
+    z-index: 2;
+    display: none;
+}
+
+.ajaxinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.alert-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+}
+
